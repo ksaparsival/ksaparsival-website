@@ -1,57 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>KSA PARSIVAL ONLINE</title>
-<link rel="stylesheet" href="styles.css" type="text/css" />
-<style type="text/css">
-  html, body{margin:0px; text-align:center; background:url(indeximages/bg.png); }
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>KSA PARSIVAL ONLINE</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <style type="text/css">
+        html, body {
+            margin: 0px;
+            text-align: center;
+            background: url(indeximages/bg.png);
+        }
+    </style>
 </head>
 
 <body>
 <a href="index2.php" style="text-decoration:none; color:#09C;">
-<div id="index_header">
-<h2>Klik hier om verder te gaan naar onze hoofdpagina</h2>
-</div>
+    <div id="index_header">
+        <h2>Klik hier om verder te gaan naar onze hoofdpagina</h2>
+    </div>
 </a>
 &nbsp;
 <div id="index_header" style="background:none;">
-<h2 style="color:#000;">Bekijk hier de diareeks van 50 jaar KSA Parsival</h2>
+    <h2 style="color:#000;">Bekijk hier de diareeks van 50 jaar KSA Parsival</h2>
 </div>
 
-<iframe width="960" height="720" src="http://www.youtube.com/embed/9YuBtAGcPqI" frameborder="0" allowfullscreen></iframe>
+<iframe width="960" height="720" src="http://www.youtube.com/embed/9YuBtAGcPqI" frameborder="0"
+        allowfullscreen></iframe>
 
 <!--<div style="width:80%; margin:auto; text-align:left;">
 
-<?php if(isset($_POST['submit'])){ ?>
+<?php if (isset($_POST['submit'])) { ?>
 	
     <?php
-	$totaalprijs = ($_POST['kinder']*9)+($_POST['normal']*11)+($_POST['maxi']*13)+($_POST['vegi']*7);
-	?>
+    $totaalprijs = ($_POST['kinder'] * 9) + ($_POST['normal'] * 11) + ($_POST['maxi'] * 13) + ($_POST['vegi'] * 7);
+    ?>
 
 	<?php
-	$to      = $_POST['email'];
-	$subject = 'KSA Parsival | Bevestiging bestelling';
-	$message = 'We hebben je bestelling goed ontvangen.' . "\r\n" . 'Aantal Kinderschotels: ' . $_POST['kinder'] . "\r\n" . 'Aantal Kleine schotels: ' . $_POST['normal'] . "\r\n" . 'Aantal normale schotels: ' . $_POST['maxi'] . "\r\n" . 'Aantal vegi schotels: ' . $_POST['vegi'] . "\r\n" . 'Totaalprijs: ' . $totaalprijs . "\r\n" . 'Alvast bedankt en tot dan!';
-	$headers = 'From: KSA Parsival';
-	mail($to, $subject, $message, $headers);
-	?>
+    $to = $_POST['email'];
+    $subject = 'KSA Parsival | Bevestiging bestelling';
+    $message = 'We hebben je bestelling goed ontvangen.' . "\r\n" . 'Aantal Kinderschotels: ' . $_POST['kinder'] . "\r\n" . 'Aantal Kleine schotels: ' . $_POST['normal'] . "\r\n" . 'Aantal normale schotels: ' . $_POST['maxi'] . "\r\n" . 'Aantal vegi schotels: ' . $_POST['vegi'] . "\r\n" . 'Totaalprijs: ' . $totaalprijs . "\r\n" . 'Alvast bedankt en tot dan!';
+    $headers = 'From: KSA Parsival';
+    mail($to, $subject, $message, $headers);
+    ?>
     
 	<?php
-	$to      = 'a1dw@hotmail.com';
-	$subject = 'Winterbbq | Bevestiging bestelling';
-	$message = 'Nieuwe bestelling:' . "\r\n" . 'Naam: ' . $_POST['naam'] . "\r\n" . 'Email: ' . $_POST['email'] . "\r\n" . 'Aantal Kinderschotels: ' . $_POST['kinder'] . "\r\n" . 'Aantal Kleine schotels: ' . $_POST['normal'] . "\r\n" . 'Aantal normale schotels: ' . $_POST['maxi'] . "\r\n" . 'Aantal vegi schotels: ' . $_POST['vegi'] . "\r\n" . 'Totaalprijs: ' . $totaalprijs;
-	$headers = 'From: KSA Parsival';
-	mail($to, $subject, $message, $headers);
-	?>
+    $to = 'a1dw@hotmail.com';
+    $subject = 'Winterbbq | Bevestiging bestelling';
+    $message = 'Nieuwe bestelling:' . "\r\n" . 'Naam: ' . $_POST['naam'] . "\r\n" . 'Email: ' . $_POST['email'] . "\r\n" . 'Aantal Kinderschotels: ' . $_POST['kinder'] . "\r\n" . 'Aantal Kleine schotels: ' . $_POST['normal'] . "\r\n" . 'Aantal normale schotels: ' . $_POST['maxi'] . "\r\n" . 'Aantal vegi schotels: ' . $_POST['vegi'] . "\r\n" . 'Totaalprijs: ' . $totaalprijs;
+    $headers = 'From: KSA Parsival';
+    mail($to, $subject, $message, $headers);
+    ?>
 
 	<div style="width:100%; float:left;"><h2>Bedankt voor je bestelling!</h2>
     <p>Kijk zeker je e-mail na of je een bevestiging van ons hebt gekregen.</p>
     <p>We vragen je wel zo snel mogelijk te betalen op 777-5905323-39. Je kan ook altijd de avond zelf cash betalen, maar we raden dit af om een vlotte bediening te garanderen. </p>
     </div>
 	<div style="clear:both;"></div>
-<?php }else{ ?>
+<?php } else { ?>
 
 <form action="" method="post">
 
